@@ -8,7 +8,7 @@ const App: Component = () => {
     <div class={styles.App}>
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
-        <p>
+        <p class="bg-red-500 text-5xl">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
