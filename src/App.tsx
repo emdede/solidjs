@@ -3,22 +3,32 @@ import type { Component } from 'solid-js';
 import logo from './logo.svg';
 import styles from './App.module.css';
 
+import { query, gql } from './GraphQLProvider';
+
 const App: Component = () => {
+  const [data] = query(
+    gql`
+      query MyQuery {
+        query {
+          dnsRecords {
+            edges {
+              node {
+                id
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
   return (
     <div class={styles.App}>
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
         <p class="bg-red-500 text-5xl">
-          Edit <code>src/App.tsx</code> and save to reload.
+          {JSON.stringify(data() || 'Loading')}.
         </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
       </header>
     </div>
   );

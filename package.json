@@ -26,6 +26,7 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
+    "@solid-primitives/graphql": "^1.4.2",
     "babel-preset-solid": "^1.6.1",
     "solid-js": "^1.6.1"
   }

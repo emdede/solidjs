@@ -303,6 +303,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@graphql-typed-document-node/core@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.1.tgz#076d78ce99822258cf813ecc1e7fa460fa74d052"
+  integrity sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg==
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.7.tgz#38aec044c6c828f6ed51d5d7ae3d9b9faf6dbb0f"
@@ -382,6 +387,20 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@solid-primitives/graphql@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/graphql/-/graphql-1.4.2.tgz#676097c6993a8df2d3f159e33801992a0f8644ec"
+  integrity sha512-OjA8e7y/v2FsgL5gghPo3Y8y2uBhrHd8u+7htNOcVo3zTbwyxIp+Pab2quKxEc4vDec9Q/4ut3gpBNb68dcLzw==
+  dependencies:
+    "@graphql-typed-document-node/core" "^3.1.1"
+    "@solid-primitives/utils" "^4.0.0"
+    graphql "^16.6.0"
+
+"@solid-primitives/utils@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/utils/-/utils-4.0.0.tgz#3c592287519dc885290d134f8aff3f0f6f4b4720"
+  integrity sha512-fGsJy8Z8YiwogpiezD7TWjI62UCb0JAHJWdoXWGrggrn4bfToZotKkabiB0IVFMkWVE1ZcrkvZT3bkmqGnK0ng==
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"
@@ -1314,6 +1333,11 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
+
+graphql@^16.6.0:
+  version "16.6.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.6.0.tgz#c2dcffa4649db149f6282af726c8c83f1c7c5fdb"
+  integrity sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==
 
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
